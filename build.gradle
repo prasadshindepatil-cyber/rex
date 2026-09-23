@@ -1,9 +1,9 @@
-buildscript {
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.2'
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
     }
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }
