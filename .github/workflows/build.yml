@@ -17,9 +17,6 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Make gradlew executable
-        run: chmod +x gradlew || true
-
       - name: Download Gradle
         run: |
           wget -q https://services.gradle.org/distributions/gradle-8.10.2-bin.zip
